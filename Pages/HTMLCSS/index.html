@@ -14,39 +14,61 @@
 
     <link rel="stylesheet" href="./styles.css" />
 
-    <title>Warren Tech Academy | Giovanne Marrone</title>
+    <title>Giovanne Marrone | HTML & CSS</title>
   </head>
   <body>
     <header>
       <div class="header-block">
-        <a href="./index.html"><p class="header-title">Warren Tech Academy</p></a>
+        <a href="../../index.html"><p class="header-title">Warren Tech Academy</p></a>
         <p class="header-subtitle">Página de exercícios | Giovanne Marrone</p>
       </div>
       <nav>
-          <ul>
-            <a href="./index.html"><li class="list-text">Início</li></a>
-            <a href="./Pages/HTMLCSS/index.html"><li class="list-text">HTML & CSS</li></a>
-            <a href="./Pages/JavaScript/index.html"><li class="list-text">JavaScript</li></a>
-          </ul>
-        </nav>
+        <ul>
+          <a href="../../index.html"><li class="list-text">Início</li></a>
+          <a href="../HTMLCSS/index.html"
+            ><li class="list-text">HTML & CSS</li></a
+          >
+          <a href="./../JavaScript/index.html"
+            ><li class="list-text">JavaScript</li></a
+          >
+        </ul>
+      </nav>
     </header>
     <div class="container">
-      <div class="landing-welcome">
-        <div class="welcome-text">
-          <h1>Olá! Seja bem-vindo(a) à minha página de exercícios 👋</h1>
+      <p>
+        Durante o módulo de HTML e CSS, aprendemos desde o básico até algumas
+        habilidades intermediárias (ou quase, hehe), como animações e fazer
+        elementos interagirem com o mouse. Logo abaixo estão duas páginas que
+        fiz com o que aprendi com o módulo de HTML e CSS da
+        <span>Warren Tech Academy</span>:
+      </p>
+      <section class="exercices">
+        <div class="card">
+          <h2>Exercícios de Animações, Hover e Active</h2>
           <p>
-            Meu nome é Giovanne Marrone, tenho 22 anos e atualmente sou aluno da
-            primeira edição da <span>Warren Tech Academy</span> de Porto Alegre e fiz esse
-            site para juntar os resultados de todos os exercícios que realizei
-            ao longo do programa!
+            Aqui, criei uma página para fazer alguns exercícios de HTML e CSS,
+            com os quais aprendi mais sobre animações, além de praticar
+            interações como hover e active.
           </p>
-          <br />
+          <a target="_blank" href="https://cheery-youtiao-be68bb.netlify.app/"
+            ><button>Acessar página</button></a
+          >
         </div>
-        <img
-          src="./assets/profile-pic-1.jpeg"
-          alt="Giovanne Marrone sorrindo"
-        />
-      </div>
+        <div class="card">
+          <h2>Landing page com formulário</h2>
+          <p>
+            Uma landing page responsiva convidando o usuário para começar a
+            investir, com um botão que leva para a criação de conta na Warren e
+            outro botão que leva a um formulário de cadastro. Além disso, a
+            página também conta com um cabeçalho e um rodapé.
+          </p>
+          <a
+            target="_blank"
+            href="https://warren-tech-academy-landing-page-and-form.netlify.app/"
+            ><button>Acessar página</button></a
+          >
+        </div>
+      </section>
     </div>
     <section class="footer">
       <p>Page developed by <span>Giovanne Marrone</span></p>

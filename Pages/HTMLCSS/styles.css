@@ -6,6 +6,7 @@
 
 :root {
   --brand-red: #e02a57;
+  --brand-red-light: #fff2f5;
   --text-color: #333333;
 }
 
@@ -15,6 +16,10 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -70,12 +75,13 @@ h1 {
   font-size: 4rem;
 }
 
-span {
-  color: var(--brand-red)
+h2 {
+  font-size: 2.4rem;
+  color: var(--brand-red);
 }
 
-a {
-  text-decoration: none;
+span {
+  color: var(--brand-red)
 }
 
 /* ============================================================== */
@@ -83,6 +89,7 @@ a {
 .container {
   width: 60%;
   margin: 0 auto;
+  margin-top: 5rem;
 }
 
 .list-text {
@@ -94,6 +101,18 @@ ul {
   display: flex;
 
   gap: 5rem;
+}
+
+.list {
+  margin-top: 4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  gap: 3rem;
+
+  font-size: 2.4rem;
+  color: var(--brand-red);
 }
 
 nav {
@@ -123,26 +142,45 @@ nav li:hover {
 
 /* ========================================================= */
 
-.landing-welcome {
-  display: flex;
-  justify-content: space-between;
-
+.exercices {
   margin-top: 5rem;
-}
-.welcome-text {
-  width: 60%;
-}
-
-.landing-welcome h1 {
-  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
 }
 
-.landing-welcome img {
-  width: 40rem;
-  height: 40rem;
-  border-radius: 1rem;
-  box-shadow: 1rem 1rem var(--brand-red);
-  margin-left: 6rem;
+.card {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--brand-red-light);
+
+  border: 2px solid var(--brand-red);
+  border-radius: 2rem;
+}
+
+button {
+  padding: 2rem;
+  border: 2px solid var(--brand-red);
+  border-radius: 3rem;
+  color: var(--brand-red);
+  font-size: 1.6rem;
+  background-color: transparent;
+  font-weight: 600;
+  margin-top: 2rem;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  transition: .3s;
+  background-color: var(--brand-red);
+  color: white;
 }
 
 .footer {
@@ -168,10 +206,10 @@ nav li:hover {
 
 .social {
   width: 4rem;
+  transition: .1s;
 }
 
-@media only screen and (max-width: 992px) {
-  .landing-welcome {
-    flex-direction: column;
-  }
+.social:hover {
+  transition: .1s;
+  filter: drop-shadow(0px 0px 4px rgb(226, 226, 226));
 }
