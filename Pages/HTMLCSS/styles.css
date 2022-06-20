@@ -213,3 +213,93 @@ button:hover {
   transition: .1s;
   filter: drop-shadow(0px 0px 4px rgb(226, 226, 226));
 }
+
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  header .header-block {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  
+  header .header-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  header .header-subtitle {
+    font-size: 1.4rem;
+    border-top: 1px solid white;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  
+    gap: 2rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding-block: 2rem;
+  
+    background-color: var(--brand-red);
+    color: white;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .exercices {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--brand-red-light);
+  
+    border: 2px solid var(--brand-red);
+    border-radius: 2rem;
+  }
+  
+  button {
+    padding: 2rem;
+    border: 2px solid var(--brand-red);
+    border-radius: 3rem;
+    color: var(--brand-red);
+    font-size: 1.6rem;
+    background-color: transparent;
+    font-weight: 600;
+    margin-top: 2rem;
+  
+    cursor: pointer;
+    transition: .3s;
+  }
+}
